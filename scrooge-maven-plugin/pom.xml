@@ -12,9 +12,9 @@
   <url>http://github.com/twitter/scrooge</url>
   <description>A Thrift generator for Scala</description>
   <scm>
-    <connection>scm:git:git@github.com:twitter/scrooge.git</connection>
-    <url>scm:git:git@github.com:twitter/scrooge.git</url>
-    <developerConnection>scm:git:git@github.com:twitter/scrooge.git</developerConnection>
+    <connection>scm:git:git@github.com:NeoGridBR/scrooge.git</connection>
+    <url>scm:git:git@github.com:NeoGridBR/scrooge.git</url>
+    <developerConnection>scm:git:git@github.com:NeoGridBR/scrooge.git</developerConnection>
   </scm>
   <licenses>
     <license>
