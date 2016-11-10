@@ -3,6 +3,7 @@ package com.twitter;
 import com.google.common.base.Function;
 import com.google.common.collect.Collections2;
 import org.apache.commons.collections.CollectionUtils;
+import org.apache.commons.lang.StringUtils;
 import org.apache.maven.plugin.MojoExecutionException;
 import org.apache.maven.plugin.testing.AbstractMojoTestCase;
 import org.codehaus.plexus.util.FileUtils;
@@ -57,14 +58,14 @@ public class ScroogeMavenPluginTest extends AbstractMojoTestCase {
     assertNotNull(mojo);
     mojo.execute();
     // Check if both thrift artifacts have scrooge generated classes
-    String[] fileNames =  new String[] {"/scrooge/com/twitter/hello/thriftjava/HelloMessage.java",
-                                        "/scrooge/com/twitter/person/thriftjava/Person.java"};
+    String[] fileNames =  new String[] {"/com/twitter/hello/thriftjava/HelloMessage.java",
+                                        "/com/twitter/person/thriftjava/Person.java"};
     final Collection<String> absExpectFiles = Collections2.transform(
       Arrays.asList(fileNames),
       new Function<String, String>() {
         @Override
         public String apply(final String input) {
-          return new String(mojo.getOutputDirectory() + input);
+          return new String(mojo.getOutputDirectory() + StringUtils.replace(input, "/", File.separator));
         }
       });
 
