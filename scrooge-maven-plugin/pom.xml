@@ -5,7 +5,7 @@
   <artifactId>scrooge-maven-plugin</artifactId>
   <packaging>maven-plugin</packaging>
   <name>scrooge-maven-plugin</name>
-  <version>4.5.0-NG-SNAPSHOT</version>
+  <version>4.5.0-NG</version>
   <prerequisites>
     <maven>3.0.4</maven>
   </prerequisites>
@@ -15,6 +15,7 @@
     <connection>scm:git:https://github.com/NeoGridBR/scrooge.git</connection>
     <url>scm:git:https://github.com/NeoGridBR/scrooge.git</url>
     <developerConnection>scm:git:https://github.com/NeoGridBR/scrooge.git</developerConnection>
+    <tag>scrooge-4.5.0-NG</tag>
   </scm>
   <licenses>
     <license>
