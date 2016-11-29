@@ -12,9 +12,9 @@
   <url>http://github.com/twitter/scrooge</url>
   <description>A Thrift generator for Scala</description>
   <scm>
-    <connection>scm:git:git@github.com:NeoGridBR/scrooge.git</connection>
-    <url>scm:git:git@github.com:NeoGridBR/scrooge.git</url>
-    <developerConnection>scm:git:git@github.com:NeoGridBR/scrooge.git</developerConnection>
+    <connection>scm:git:https://github.com/NeoGridBR/scrooge.git</connection>
+    <url>scm:git:https://github.com/NeoGridBR/scrooge.git</url>
+    <developerConnection>scm:git:https://github.com/NeoGridBR/scrooge.git</developerConnection>
   </scm>
   <licenses>
     <license>
@@ -270,18 +270,6 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-  <repositories>
-    <repository>
-      <id>maven.central</id>
-      <name>Maven Central</name>
-      <url>http://repo1.maven.org/maven2</url>
-    </repository>
-    <repository>
-      <id>maven.twttr.com</id>
-      <name>maven.twttr.com</name>
-      <url>https://maven.twttr.com</url>
-    </repository>
-  </repositories>
   <reporting>
     <plugins>
       <plugin>
