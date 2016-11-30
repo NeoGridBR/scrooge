@@ -25,14 +25,14 @@
   </licenses>
   <distributionManagement>
     <snapshotRepository>
-      <id>sonatype-nexus-snapshots</id>
-      <name>Sonatype OSS</name>
-      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+      <id>snapshots</id>
+      <name>snapshots</name>
+      <url>${distributionManagement.snapshotRepository.url}</url>
     </snapshotRepository>
     <repository>
-      <id>sonatype-nexus-staging</id>
-      <name>Nexus Release Repository</name>
-      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+      <id>repository</id>
+      <name>repository</name>
+      <url>${distributionManagement.repository.url}</url>
     </repository>
   </distributionManagement>
   <developers>
